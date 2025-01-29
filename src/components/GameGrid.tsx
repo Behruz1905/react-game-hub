@@ -19,14 +19,14 @@ const GameGrid = ({ gameQuery }: Props) => {
       spacing={7}
       paddingTop={2}
     >
-      {error && <Text>{error}</Text>}
+      {error && <Text>{error.message}</Text>}
       {isLoading &&
         skeletons.map((skeleton) => (
           <GameCardContainer key={skeleton}>
             <GameCardSkeleton />
           </GameCardContainer>
         ))}
-      {data.map((game) => (
+      {data?.results.map((game) => (
         <GameCardContainer key={game.id}>
           <GameCard game={game} />
         </GameCardContainer>
