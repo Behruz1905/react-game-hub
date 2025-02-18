@@ -1,5 +1,5 @@
 import { Heading } from "@chakra-ui/react";
-import { GameQuery } from "../pages/Layout";
+import { GameQuery } from "../pages/HomePage";
 import usePlatform from "../hooks/usePlatform";
 import useGenre from "../hooks/useGenre";
 
